@@ -13,7 +13,7 @@ const Furniture = () => {
         return selectedCategory === piece.category;
 }
 )
-.map(piece => <PieceOfFurniture piece={piece}/>)}
+.map(piece => <PieceOfFurniture key={piece.id} piece={piece}/>)}
         </div>
     )
 }
